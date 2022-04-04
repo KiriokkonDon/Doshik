@@ -4,11 +4,16 @@
 
 {% block content %}
  <div class="features">
-  <h1>Портфолио</h1>
-  <p>~~~~~~~~~~~~~~</p>
-   <button class="btn btn-secondary">UwU</button>
-  {%for el in obj.values%}
-   <p>{{ el }}</p>
-  {% endfor %}
+   <h1>Портфолио</h1>
+  <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+
+     {% for el in Ff %}
+         <div class="alert alert-warning">
+           <h3>{{el.title}}</h3>
+           <p>{{el.anons}}</p>
+           <p>{{el.full_text}}</p>
+
+         </div>
+    {% endfor %}
  </div>
 {% endblock %}
